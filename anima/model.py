@@ -41,7 +41,7 @@ class Solution:
         return self.path / 'Article'
 
     def doc_path(self) -> Path:
-        return self.article_path() / (self.problem.title_slug() + '.md')
+        return self.article_path() / f'{self.problem.title_slug()}.md'
 
     def code_path(self) -> Path:
         return self.path / 'Code'
